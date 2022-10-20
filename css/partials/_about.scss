@@ -1,0 +1,36 @@
+/*ABOUT*/
+.about {
+    background-image: url("../img/circulo-about.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    background-position-y: bottom;
+    .container {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        .about-image-bg {
+            width: 50%;
+        }
+        .about-text {
+            width: 50%;
+            padding: 20px;
+            h2 {
+                font-weight: 600;
+                color: #223264;
+                span {
+                    color: #FAC306;
+                }
+            }
+            .subtitle {
+                font-weight: 600;
+                color: #223264;
+            }
+            ul {
+                li {
+                    list-style: url("../img/list-decoration.svg");
+                }
+            }
+        }
+    }
+}

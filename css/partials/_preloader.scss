@@ -1,0 +1,72 @@
+#mydiv {
+    width: 100%;
+    height: 100vh;
+    background: rgb(33,95,170);
+    background: linear-gradient(45deg, rgba(33,95,170,1) 0%, rgba(34,50,100,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 10000;
+    .content-preloader {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        .font-loading {
+            font-size: 18px;
+            font-weight: 400;
+            color: #fff;
+            margin-top: 15px;
+            text-align: center;
+            letter-spacing: 2px;
+            display: flex;
+            justify-content: center;
+            span {
+                margin-left: 3px;
+                .loader-dots {
+                    margin-top: 15px;
+                    width: 15px; /* control the size */
+                    aspect-ratio: 8/5;
+                    --_g: no-repeat radial-gradient(#ffffff 68%,#0000 71%);
+                    -webkit-mask: var(--_g),var(--_g),var(--_g);
+                    -webkit-mask-size: 25% 40%;
+                    background: #ffffff;
+                    animation: load 2s infinite;
+                    }
+
+                    @keyframes load {
+                    0%    {-webkit-mask-position: 0% 0%  ,50% 0%  ,100% 0%  }
+                    16.67%{-webkit-mask-position: 0% 100%,50% 0%  ,100% 0%  }
+                    33.33%{-webkit-mask-position: 0% 100%,50% 100%,100% 0%  }
+                    50%   {-webkit-mask-position: 0% 100%,50% 100%,100% 100%}
+                    66.67%{-webkit-mask-position: 0% 0%  ,50% 100%,100% 100%}
+                    83.33%{-webkit-mask-position: 0% 0%  ,50% 0%  ,100% 100%}
+                    100%  {-webkit-mask-position: 0% 0%  ,50% 0%  ,100% 0%  }
+                    }
+            }
+        }
+    }
+}
+.preloader {
+    width: 150px;
+    height: 150px;
+    animation-name: girar;
+    background-image: url('../img/recurso_3.svg');
+    background-repeat: no-repeat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin: 0 auto;
+  }
+  @keyframes girar {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg) scale(1.1);
+    }
+    100% {
+      transform: rotate(360deg);  
+    }
+  }

@@ -1,0 +1,19 @@
+.clientes{
+    padding: 80px 0px;
+    .container {
+        .clientes_title {
+            @include title;
+            span {
+                color: $span_color;
+            }
+        }
+        .container_clientes {
+            display: flex;
+            margin-top: 50px;
+            .clientes_item {
+                width: 200px;
+                margin: 20px;
+            }
+        }
+    }
+}

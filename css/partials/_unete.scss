@@ -1,0 +1,26 @@
+.unete {
+    display: flex;
+    background-color: #F3F5FA;
+    .unete-item-1 {
+        width: 50%;
+        background-image: url('../img/vitek-unete.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .unete-item-2 {
+        width: 50%;
+        height: 70vh;
+        padding: 0 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        .unete_title {
+            @include title;
+            text-align: inherit;
+        }
+        .cta_boton {
+            @include boton;
+        }
+    }
+}

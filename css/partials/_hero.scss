@@ -1,0 +1,64 @@
+/*HERO*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+}
+
+.hero {
+    color: #ffffff  ;
+    width: 100%;
+    height: 100vh;
+    background: url('../img/hero-bg.webp') no-repeat center center;
+    background-size: cover;
+    .wrap {
+      height: 100%;  
+      width: 95%;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+        .text-hero {
+            font-size: 4.5em;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            line-height: 1em;
+        }
+        .subtext{
+            font-size: 26px;
+            line-height: 36px;
+            margin-top: 20px;
+        }
+        .bg {
+            width: 45%;
+            height: 100vh;
+            position: absolute;
+            top: 5vh;
+            right: 0;
+            z-index: 990;
+            background: url('../img/hero.webp') no-repeat center center;
+            background-size: contain; 
+        }
+    
+        .dots {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 20%;
+            right: 5%;
+            z-index: 10;
+            background: url(../img/dots-yellow.svg) no-repeat center center;
+            background-size: contain;
+          }
+    }
+}

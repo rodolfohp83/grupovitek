@@ -1,0 +1,40 @@
+/*HEADER*/
+.header {
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 30px;
+    margin-bottom: -19vh;
+        .logo {
+            padding: 20px 0;
+            width: 200px;
+            img {
+                transition: 0.3s ease-out;
+            }
+        }
+        .navbar {
+            margin: 20px 0;
+            .nav-item {
+                padding: 10px;
+            }
+        }
+}
+.activo {
+    background: rgba(34, 50, 100, 0.9);
+    transition: 0.3s ease-out;
+    margin-top: 0;
+		.logo {
+            padding: 10px 0;
+			background-repeat: no-repeat;
+			background-size: contain;
+			img {
+				width: 100px;
+				transition: 0.3s ease-out;
+			}
+		}
+    
+}

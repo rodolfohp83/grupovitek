@@ -1,0 +1,24 @@
+$color_main: #223264;
+$color_secundary: #215FAA;
+$span_color: #FAC306;
+
+@mixin title {
+    color: $color_main;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+@mixin boton {
+    border-radius: 50px;
+    background-color: $span_color;  
+    color: #fff;
+    transition: 0.3s;
+    margin: 15px 0;
+    padding: 10px 15px;
+    transition: 0.5s ease-in-out;
+    &:hover {
+        transition: 0.5s ease-in-out;
+        background-color: $color_secundary;
+    }
+}
