@@ -220,6 +220,12 @@ body .activo {
   transition: 0.3s ease-out;
 }
 
+@media (max-width: 768) {
+  .activo {
+    border: solid 1px red;
+    text-align: center;
+  }
+}
 /*HERO*/
 *, *:before, *:after {
   box-sizing: border-box;
@@ -327,7 +333,6 @@ body {
 }
 .servicios .container .servicios_title {
   color: #223264;
-  font-size: 2em;
   font-weight: bold;
   text-align: center;
 }
@@ -335,16 +340,15 @@ body {
   color: #FAC306;
 }
 .servicios .container .servicios_subtitle {
-  font-size: 1.2em;
   text-align: center;
 }
-.servicios .container .container_cards {
+.servicios .container .container {
   display: flex;
   flex-wrap: wrap;
   margin: 20px 0;
   justify-content: center;
 }
-.servicios .container .container_cards .cards_item {
+.servicios .container .container .cards_item {
   background-color: #ffffff;
   border-radius: 5px;
   padding: 10px;
@@ -353,32 +357,33 @@ body {
   margin: 10px;
   width: 30%;
   max-width: 300px;
+  min-height: 140px;
   transition: 0.3s;
 }
-.servicios .container .container_cards .cards_item img {
+.servicios .container .container .cards_item img {
   width: 80px;
 }
-.servicios .container .container_cards .cards_item div {
+.servicios .container .container .cards_item div {
   display: flex;
   flex-direction: column;
 }
-.servicios .container .container_cards .cards_item div .cards_title {
+.servicios .container .container .cards_item div .cards_title {
   font-size: 1.2em;
   font-weight: bold;
   color: #FAC306;
 }
-.servicios .container .container_cards .cards_item div .cards_text {
+.servicios .container .container .cards_item div .cards_text {
   font-size: 14px;
   color: #223264;
 }
-.servicios .container .container_cards .cards_item:hover {
+.servicios .container .container .cards_item:hover {
   transition: 0.9s ease-in-out;
   background-color: #215FAA;
 }
-.servicios .container .container_cards .cards_item:hover img {
+.servicios .container .container .cards_item:hover img {
   filter: invert(100%);
 }
-.servicios .container .container_cards .cards_item:hover div {
+.servicios .container .container .cards_item:hover div {
   color: #ffffff;
 }
 .servicios .servicios_dots {
@@ -425,7 +430,6 @@ body {
 }
 .clientes .container .clientes_title {
   color: #223264;
-  font-size: 2em;
   font-weight: bold;
   text-align: center;
 }
@@ -463,7 +467,6 @@ body {
 }
 .unete .unete-item-2 .unete_title {
   color: #223264;
-  font-size: 2em;
   font-weight: bold;
   text-align: center;
   text-align: inherit;
@@ -567,4 +570,88 @@ body {
   font-size: 10px;
   padding: 10px 0;
   border-bottom: solid 2px #FAC306;
+}
+
+/** RESPONSIVE **/
+@media (max-width: 768px) {
+  .header {
+    justify-content: center;
+  }
+  .header .navbar {
+    display: none;
+  }
+  .activo {
+    text-align: center;
+  }
+  .hero .wrap {
+    flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 100vh;
+  }
+  .hero .wrap .text-hero {
+    font-size: 2em;
+    text-align: center;
+    justify-content: flex-start;
+    height: 10vh;
+  }
+  .hero .wrap .subtext {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .hero .wrap .bg {
+    width: 100%;
+    height: 50vh;
+    position: inherit;
+  }
+  .hero .wrap .dots {
+    width: 60px;
+    height: 60px;
+  }
+  .about .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about .container .about-image-bg, .about .container .about-text {
+    width: 100%;
+  }
+  .servicios .container .container .cards_item {
+    width: 100%;
+  }
+  .cta_bg {
+    height: 50vh;
+    background-position-x: center;
+  }
+  .cta_bg .container {
+    height: 50vh;
+  }
+  .clientes .container .container_clientes {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .clientes .container .container_clientes .clientes_item {
+    width: 35%;
+    margin: 20px;
+  }
+  .unete {
+    flex-direction: column;
+  }
+  .unete .unete-item-1, .unete .unete-item-2 {
+    width: 100%;
+    height: 50vh;
+  }
+  .unete .unete-item-1 {
+    background-position-x: center;
+  }
+  .footer .container {
+    flex-direction: column;
+  }
+  .footer .container .footer-item {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .footer .container .footer-item .social {
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
